@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Pegawai</title>
+    <!-- Tambahkan Font Awesome (atau library icon lain) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 30px 40px; /* Sedikit lebih lebar */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 300px; /* Lebar container form */
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 25px;
+            color: #333;
+            font-size: 24px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left; /* Label rata kiri */
+            position: relative; /* Untuk positioning relatif mata password */
+        }
+        label {
+            display: block; /* Membuat label di baris sendiri */
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%; /* Lebar input penuh container */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Padding tidak menambah lebar total */
+            padding-right: 30px;  /* Ruang untuk icon mata */
+        }
+        button {
+            width: 100%; /* Lebar tombol penuh container */
+            padding: 12px;
+            font-size: 16px;
+            background-color: #007bff; /* Warna biru */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            margin-top: 10px; /* Jarak dari input terakhir */
+        }
+        button:hover {
+            background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+        }
+
+        .password-container {
+            position: relative;
+        }
+
+        .password-container i {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #aaa;  /* Warna icon mata */
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Login Pegawai</h1>
+
+        <!-- Form Login -->
+        <form action="proses_login.php" method="POST">
+             <!--
+                action="proses_login.php": Ganti ini dengan alamat skrip/endpoint
+                                          di server Anda yang akan memvalidasi login.
+                method="POST":          Metode pengiriman data.
+            -->
+
+            <div class="form-group">
+                <label for="id_pegawai">ID Pegawai:</label>
+                <input type="text" id="id_pegawai" name="id_pegawai" placeholder="Masukkan ID Pegawai Anda" required>
+                <!--
+                    name="id_pegawai": Ini penting! Nama ini akan digunakan
+                                       di sisi server untuk mengambil nilai ID.
+                    required:          Memastikan field ini tidak kosong saat submit.
+                 -->
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" placeholder="Masukkan Password Anda" required>
+                    <i class="fas fa-eye" id="togglePassword"></i>
+                </div>
+
+                 <!--
+                    type="password":   Menyembunyikan karakter yang diketik.
+                    name="password":   Nama ini akan digunakan di sisi server
+                                       untuk mengambil nilai password.
+                    required:          Memastikan field ini tidak kosong saat submit.
+                 -->
+            </div>
+
+            <button type="submit">Masuk</button>
+        </form>
+    </div>
+
+    <script>
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#password");
+
+        togglePassword.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+
+            // toggle the icon
+            this.classList.toggle("fa-eye");
+            this.classList.toggle("fa-eye-slash");
+        });
+    </script>
+
+</body>
+</html>
