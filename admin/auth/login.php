@@ -219,7 +219,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <!-- Pastikan path ini benar relatif terhadap lokasi file PHP ini -->
             <!-- Jika file login di root, dan assets di root, gunakan 'assets/...' -->
             <!-- Jika file login di root/folder/, dan assets di root, gunakan '../assets/...' -->
-             <img src="../assets/images/logo-rika.svg" alt="Logo Restoran Rika">
+             <img src="../assets/images/logo-rahmat.svg" alt="Logo Restoran Rika">
         </div>
 
         <?php if (isset($error_message)): ?>

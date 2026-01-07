@@ -404,7 +404,7 @@ $display_status_in_struk = ucwords(str_replace('_', ' ', $status_in_struk_db));
                  <!-- Gambar Logo Resto (PASTIHKAN PATHNYA BENAR!) -->
                  <?php
                     // !!! SESUAIKAN PATH LOGO ANDA !!!
-                    $logo_path_relative = '../../../admin/assets/images/logo-rika.svg';
+                    $logo_path_relative = '../../../admin/assets/images/logo-rahmat.svg';
                     if (file_exists($logo_path_relative)) echo '<img src="' . htmlspecialchars($logo_path_relative) . '" alt="Logo Resto" class="shop-logo">';
                     else error_log("sukses.php: Restaurant logo file not found at path: " . $logo_path_relative); // Log error jika tidak ditemukan
                  ?>

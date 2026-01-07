@@ -714,8 +714,8 @@ $display_status_in_struk = ucwords(str_replace('_', ' ', $status_in_struk_db));
                  <!-- Gambar Logo Resto (PASTIHKAN PATHNYA BENAR!) -->
                  <?php
                     // Path ke file logo restoran Anda relatif dari lokasi file sukses.php.
-                    // Contoh: sukses.php di /pages/pelanggan/payment/, logo di /admin/assets/images/logo-rika.svg
-                    $logo_path_relative = '../../../admin/assets/images/logo-rika.svg'; // <<< SESUAIKAN PATH LOGO ANDA !!!
+                    // Contoh: sukses.php di /pages/pelanggan/payment/, logo di /admin/assets/images/logo-rahmat.svg
+                    $logo_path_relative = '../../../admin/assets/images/logo-rahmat.svg'; // <<< SESUAIKAN PATH LOGO ANDA !!!
 
                     // Cek apakah file logo ada. Jika path salah atau file tidak ada, tag <img> tidak akan dicetak.
                     if (file_exists($logo_path_relative)) {
