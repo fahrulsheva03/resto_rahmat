@@ -266,7 +266,7 @@ $js_chart_data_bundle = [
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Restoran Admin - Dashboard (<?php echo htmlspecialchars($username); ?>)</title>
+    <title>Resto-Rahmat - Dashboard (<?php echo htmlspecialchars($username); ?>)</title>
     <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
@@ -294,7 +294,7 @@ $js_chart_data_bundle = [
                                     <p class="m-0 pr-3">Dashboard</p>
                                 </a>
                                 <a class="pl-3 mr-4" href="#">
-                                    <p class="m-0">Selamat Datang, <?php echo htmlspecialchars($username); ?> (<?php echo htmlspecialchars($role); ?>)</p>
+                                    <p class="m-0">Selamat Datang, (<?php echo htmlspecialchars($role); ?>)</p>
                                 </a>
                             </div>
                             <a href="../tambah_menu.php" class="btn btn-primary mt-2 mt-sm-0 btn-icon-text"><i class="mdi mdi-silverware-fork-knife"></i> Tambah Menu</a>

@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <head>
     <meta charset="utf-8">
-    <title>Resto-Rika - Login</title>
+    <title>Resto-Rahmat - Login</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon -->
@@ -160,11 +160,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" autocomplete="off">
                 <div class="form-group">
                     <label for="nama">Nama:</label>
-                    <input type="text" class="form-control" id="nama" name="nama" required autocomplete="off">
+                    <input type="text" class="form-control" id="nama" name="nama" required autocomplete="off" placeholder="Nama Anda">
                 </div>
                 <div class="form-group">
                     <label for="notelepon">Nomor Telepon:</label>
-                    <input type="text" class="form-control" id="notelepon" name="notelepon" required autocomplete="off">
+                    <input type="text" class="form-control" id="notelepon" name="notelepon" required autocomplete="off" placeholder="Contoh: 081234567890" maxlength="12" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                 </div>
                 <input type="hidden" name="meja" value="<?php echo isset($_GET['meja']) ? intval($_GET['meja']) : 0; ?>">
                 <button type="submit" class="btn btn-login w-100">Login</button>

@@ -23,7 +23,7 @@ $role = $_SESSION['role']; // Ambil juga role pengguna
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Resto-Rika</title>
+    <title>Resto-Rahmat - Menu</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
@@ -71,7 +71,7 @@ $role = $_SESSION['role']; // Ambil juga role pengguna
                 <div class="content-wrapper">
                     <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
                         <div class="header-left">
-                            <a href="tambah_menu.php" class="btn btn-primary mb-2 mb-md-0 mr-2"> <i class="fas fa-plus"></i>Tambah Menu Baru</a>
+                            <a href="tambah_menu.php" class="btn btn-primary mb-2 mb-md-0 mr-2">Tambah Menu Baru</a>
 
                         </div>
 

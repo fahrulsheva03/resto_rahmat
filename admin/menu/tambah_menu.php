@@ -1,4 +1,16 @@
 <?php
+session_start();
+
+// Periksa apakah pengguna sudah login (opsional, tergantung kebutuhan Anda)
+if (!isset($_SESSION['username'])) {
+  // Jika tidak login, mungkin redirect atau tampilkan pesan
+  header("Location: ../auth/index.php?login_required=true");
+  exit();
+}
+// Ambil informasi pengguna dari sesi
+$username = $_SESSION['username'];
+$role = $_SESSION['role']; // Ambil juga role pengguna
+
 include '../koneksi.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

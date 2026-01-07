@@ -7,7 +7,7 @@ include 'config.php'; // Koneksi ke database
 
 <head>
     <meta charset="utf-8">
-    <title>Resto-Rika</title>
+    <title>Resto-Rahmat</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon -->
@@ -37,6 +37,150 @@ include 'config.php'; // Koneksi ke database
     <link href="css/style1.css" rel="stylesheet">
 
 
+    <style>
+        /* Floating Cart Button Styles */
+        #cart {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 9999; /* Pastikan selalu di atas elemen lain */
+            background-color: #FEA116; /* Warna oranye utama */
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #cart:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        #cart i {
+            font-size: 24px;
+        }
+
+        #cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: #dc3545; /* Merah untuk badge */
+            color: white;
+            border-radius: 50%;
+            padding: 4px 8px;
+            font-size: 12px;
+            font-weight: bold;
+            border: 2px solid #fff;
+        }
+
+        /* Agar daftar item di modal bisa di-scroll jika terlalu panjang */
+        .cart-items-container {
+            max-height: 60vh;
+            overflow-y: auto;
+            padding-right: 5px;
+        }
+
+        /* Responsif untuk Mobile */
+        @media (max-width: 576px) {
+            #cart {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+            }
+
+            #cart i {
+                font-size: 20px;
+            }
+            
+            #cart-count {
+                padding: 2px 6px;
+                font-size: 10px;
+            }
+        }
+
+        /* Perbaikan Tampilan Item Keranjang agar lebih rapi */
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+            position: relative;
+        }
+
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+
+        .cart-item-image {
+            width: 60px !important; /* Paksa ukuran gambar kecil */
+            height: 60px !important;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .cart-item-details {
+            flex: 1;
+            min-width: 0; /* Mencegah teks overflow */
+        }
+
+        .cart-item-name {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .cart-item-price {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 5px;
+        }
+
+        .cart-item-quantity {
+            display: inline-flex;
+            align-items: center;
+            background: #f8f9fa;
+            border-radius: 4px;
+            border: 1px solid #dee2e6;
+        }
+
+        .cart-item-quantity button {
+            background: none;
+            border: none;
+            color: #FEA116;
+            font-weight: bold;
+            padding: 2px 8px;
+            cursor: pointer;
+        }
+
+        .cart-item-subtotal {
+            font-weight: bold;
+            color: #FEA116;
+            margin-left: 10px;
+            font-size: 0.95rem;
+        }
+
+        .remove-from-cart {
+            background: none;
+            border: none;
+            color: #dc3545;
+            font-size: 1.2rem;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -53,8 +197,8 @@ include 'config.php'; // Koneksi ke database
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.php" class="nav-item nav-link active">Home</a>
-                        <a href="about.php" class="nav-item nav-link">About</a>
+                        <a href="index.php" class="nav-item nav-link active">Menu</a>
+                        <a href="about.php" class="nav-item nav-link">Tentang</a>
                         <a href="pesanan.php" class="nav-item nav-link">Pesanan</a>
                         <a href="logout.php" class="nav-item nav-link">Logout</a>
                     </div>
@@ -66,7 +210,7 @@ include 'config.php'; // Koneksi ke database
                         <div class="col-lg-6 text-center text-lg-start">
                             <h1 class="text-primary m-0 animated slideInRight">Selamat Datang<br><?= $nama_pelanggan; ?></h1>
                             <h1 class="display-3 text-white animated slideInLeft"><br>Citarasa Istimewa<br>dalam Setiap Sajian</h1>
-                            <p class="text-white animated slideInLeft mb-4 pb-2">Di Resto-Rika, kami mengutamakan kualitas bahan dan cita rasa otentik. Setiap hidangan diracik dengan cinta dan keahlian untuk memberikan pengalaman bersantap yang tak terlupakan</p>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">Di Resto-Rahmat, kami mengutamakan kualitas bahan dan cita rasa otentik. Setiap hidangan diracik dengan cinta dan keahlian untuk memberikan pengalaman bersantap yang tak terlupakan</p>
                         </div>
                         <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                             <img class="img-fluid" src="assets/menu/img/hero.png" alt="">

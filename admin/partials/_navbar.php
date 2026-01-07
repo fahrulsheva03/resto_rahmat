@@ -21,11 +21,8 @@
                     </div>
                   </a>
                   <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-                    <a class="dropdown-item" href="#">
-                      <i class="mdi mdi-cached mr-2 text-success"></i> Activity Log </a>
-                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="../auth/logout.php">
-                      <i class="mdi mdi-logout mr-2 text-primary"></i> Signout </a>
+                      <i class="mdi mdi-logout mr-2 text-primary"></i> Logout </a>
                   </div>
                 </li>
               </ul>
@@ -46,26 +43,26 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../meja/index.php">
-                  <i class="mdi mdi-chart-bar menu-icon"></i>
+                  <i class="mdi mdi-table menu-icon"></i>
                   <span class="menu-title">Meja</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../pelanggan/index.php">
-                  <i class="mdi mdi-chart-bar menu-icon"></i>
+                  <i class="mdi mdi-human-male-female menu-icon"></i>
                   <span class="menu-title">Pelanggan</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../pesanan/index.php">
-                  <i class="mdi mdi-chart-bar menu-icon"></i>
+                  <i class="mdi mdi-cart menu-icon"></i>
                   <span class="menu-title">Pesanan</span>
                 </a>
               </li>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../menu/index.php">
-                  <i class="mdi mdi-table-large menu-icon"></i>
+                  <i class="mdi mdi-food menu-icon"></i>
                   <span class="menu-title">Menu</span>
                 </a>
               </li>

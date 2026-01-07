@@ -113,7 +113,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Resto-Rika - Daftar Pelanggan</title> <!-- Judul halaman -->
+    <title>Resto-Rahmat - Pelanggan</title> <!-- Judul halaman -->
     <!-- plugins:css (path relatif ke admin/meja/) -->
     <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
@@ -180,7 +180,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
                     <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
                         <div class="header-left">
                             <!-- Tombol tambah pelanggan dihapus -->
-                            <h4>Daftar Pelanggan</h4>
+                            <h3>Daftar Pelanggan</h3>
                         </div>
 
                         <!-- Search dan Sort (Sama seperti sebelumnya) -->

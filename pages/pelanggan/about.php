@@ -36,7 +36,7 @@ $param_string = count($params) > 0 ? '?' . implode('&', $params) : '';
 
 <head>
     <meta charset="utf-8">
-    <title>Resto-Rika - About Us</title>
+    <title>Resto-Rahmat - About Us</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <link href="assets/menu/img/logo.png" rel="icon">
@@ -219,10 +219,9 @@ $param_string = count($params) > 0 ? '?' . implode('&', $params) : '';
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.php<?php echo $param_string; ?>" class="nav-item nav-link">Home</a>
-                        <a href="about.php<?php echo $param_string; ?>" class="nav-item nav-link active">About</a>
+                        <a href="index.php<?php echo $param_string; ?>" class="nav-item nav-link">Menu</a>
+                        <a href="about.php<?php echo $param_string; ?>" class="nav-item nav-link active">Tentang</a>
                         <a href="pesanan.php<?php echo $param_string; ?>" class="nav-item nav-link">Pesanan</a>
-                        <a href="menu.php<?php echo $param_string; ?>" class="nav-item nav-link">Menu</a>
                         <a href="logout.php" class="nav-item nav-link">Logout</a>
                     </div>
                 </div>
@@ -243,9 +242,9 @@ $param_string = count($params) > 0 ? '?' . implode('&', $params) : '';
                     <div class="row g-5 align-items-center">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="text-content">
-                                <h2>Resto-Rika: Cita Rasa, Kenyamanan, Kenangan.</h2>
+                                <h2>Resto-Rahmat: Cita Rasa, Kenyamanan, Kenangan.</h2>
                                 <p>
-                                    Didirikan pada tahun 2023 di jantung kota Makassar, Resto-Rika bukan sekadar tempat makan, melainkan sebuah destinasi kuliner. Kami berkomitmen menyajikan pengalaman bersantap yang tak terlupakan melalui hidangan lezat dan suasana yang hangat.
+                                    Didirikan pada tahun 2023 di jantung kota Makassar, Resto-Rahmat bukan sekadar tempat makan, melainkan sebuah destinasi kuliner. Kami berkomitmen menyajikan pengalaman bersantap yang tak terlupakan melalui hidangan lezat dan suasana yang hangat.
                                 </p>
                                 <p>
                                     Setiap sajian kami dibuat dengan teliti oleh tim koki profesional, menggunakan bahan-bahan segar pilihan dari pemasok lokal terpercaya. Kami percaya bahwa kualitas bahan adalah kunci utama kelezatan, dan setiap hidangan adalah karya seni yang kami banggakan.
@@ -259,12 +258,11 @@ $param_string = count($params) > 0 ? '?' . implode('&', $params) : '';
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                             <div class="img-col">
                                 <div class="img-container">
-                                    <img class="img-fluid" src="assets/menu/img/rika.jpg" alt="Tentang Resto-Rika">
+                                    <img class="img-fluid" src="assets/menu/img/resto.png" alt="Tentang Resto-Rahmat">
                                 </div>
                                 <div class="social-icons-under-image">
-                                    <a href="https://www.instagram.com/rika_dampang/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://wa.me/+6282190452141" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                                    <a href="https://web.facebook.com/rikadampang.sopo?locale=id_ID" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/rhmt.matt/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://wa.me/+6285213976352" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -276,7 +274,7 @@ $param_string = count($params) > 0 ? '?' . implode('&', $params) : '';
                     <div class="col-lg-8 text-center wow fadeInUp" data-wow-delay="0.1s">
                         <h2 class="section-title ff-secondary text-center text-primary fw-normal">Filosofi Kami</h2>
                         <p class="mb-4">
-                            Di Resto-Rika, kami percaya bahwa pengalaman bersantap adalah lebih dari sekadar makanan. Ini tentang menciptakan momen kebahagiaan, kebersamaan, dan kepuasan yang mendalam. Filosofi kami berakar pada tiga pilar utama:
+                            Di Resto-Rahmat, kami percaya bahwa pengalaman bersantap adalah lebih dari sekadar makanan. Ini tentang menciptakan momen kebahagiaan, kebersamaan, dan kepuasan yang mendalam. Filosofi kami berakar pada tiga pilar utama:
                         </p>
                     </div>
                 </div>

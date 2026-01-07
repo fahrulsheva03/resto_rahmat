@@ -145,7 +145,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'update_all_qr') {
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Resto-Rika - Daftar Meja</title>
+    <title>Resto-Rahmat - Meja</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
@@ -217,11 +217,11 @@ if (isset($_GET['action']) && $_GET['action'] == 'update_all_qr') {
                 <div class="content-wrapper">
                     <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
                         <div class="header-left">
-                            <a href="tambah_meja.php" class="btn btn-primary mb-2 mb-md-0 mr-2"><i class="fas fa-plus"></i> Tambah Meja Baru</a>
+                            <a href="tambah_meja.php" class="btn btn-primary mb-2 mb-md-0 mr-2">Tambah Meja Baru</a>
                             <!-- Tombol untuk memperbarui semua QR Code -->
-                            <button class="btn btn-warning mb-2 mb-md-0 mr-2" onclick="confirmUpdateAllQr()"><i class="fas fa-qrcode"></i> Perbarui Semua QR</button>
+                            <button class="btn btn-warning mb-2 mb-md-0 mr-2" onclick="confirmUpdateAllQr()">Perbarui Semua QR</button>
                              <!-- Tombol untuk mencetak semua QR Code -->
-                            <a href="print_qr.php?all=true" target="_blank" class="btn btn-info mb-2 mb-md-0"><i class="fas fa-print"></i> Print All QR</a>
+                            <a href="print_qr.php?all=true" target="_blank" class="btn btn-info mb-2 mb-md-0"> Print All QR</a>
 
                         </div>
                     </div>

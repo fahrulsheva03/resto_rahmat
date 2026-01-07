@@ -58,7 +58,7 @@ if ($stmt_pesanan) {
 
 <head>
     <meta charset="utf-8">
-    <title>Resto-Rika - Pesanan Anda</title>
+    <title>Resto-Rahmat - Pesanan Anda</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon -->
@@ -162,9 +162,9 @@ if ($stmt_pesanan) {
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
                         <!-- Tambahkan $param_string ke setiap link -->
-                        <a href="index.php<?php echo $param_string; ?>" class="nav-item nav-link">Home</a>
-                        <a href="about.php<?php echo $param_string; ?>" class="nav-item nav-link">About</a>
-                        <a href="menu.html<?php echo $param_string; ?>" class="nav-item nav-link">Menu</a>
+                        <a href="index.php<?php echo $param_string; ?>" class="nav-item nav-link">Menu</a>
+                        <a href="about.php<?php echo $param_string; ?>" class="nav-item nav-link">Tentang</a>
+                        <a href="pesanan.php<?php echo $param_string; ?>" class="nav-item nav-link active">Pesanan</a>
                         <a href="logout.php" class="nav-item nav-link">Logout</a>
                     </div>
                 </div>

@@ -262,7 +262,7 @@ if ($stmt_select === false) {
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Resto-Rika - Data Pesanan</title>
+    <title>Resto-Rahmat - Pesanan</title>
     <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
@@ -383,7 +383,7 @@ if ($stmt_select === false) {
                 <div class="content-wrapper">
                     <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
                         <div class="header-left">
-                            <h2>Data Pesanan</h2>
+                            <h3>Data Pesanan</h3>
                         </div>
 
                         <div class="d-flex align-items-center">
