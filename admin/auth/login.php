@@ -228,7 +228,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <form method="post">
             <div class="input-group">
-                <input type="text" name="username" placeholder="Username" required autocomplete="username">
+                <input type="text" name="username" placeholder="Usernameeee" required autocomplete="username">
             </div>
             <div class="input-group">
                 <input type="password" name="password" placeholder="Password" required autocomplete="current-password">
