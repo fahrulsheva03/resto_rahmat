@@ -96,7 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             /*background: #f9f9f9; /* Hapus atau komentari warna background solid */
             
             /* --- Tambahkan CSS untuk Background Gambar --- */
-            background-image: url('../assets/images/bg.jpg'); /* <--- GANTI DENGAN PATH GAMBAR ANDA */
+            background-image: url('../assets/images/dalrun.png'); /* <--- GANTI DENGAN PATH GAMBAR ANDA */
             background-size: cover; /* Skalakan gambar agar menutupi seluruh area body tanpa distorsi */
             background-position: center center; /* Pusatkan gambar */
             background-repeat: no-repeat; /* Jangan ulangi gambar */
@@ -219,7 +219,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <!-- Pastikan path ini benar relatif terhadap lokasi file PHP ini -->
             <!-- Jika file login di root, dan assets di root, gunakan 'assets/...' -->
             <!-- Jika file login di root/folder/, dan assets di root, gunakan '../assets/...' -->
-             <img src="../assets/images/logo-rahmat.svg" alt="Logo Restoran Rika">
+             <img src="../assets/images/dalrum.png" alt="Logo Restoran Rika">
         </div>
 
         <?php if (isset($error_message)): ?>
